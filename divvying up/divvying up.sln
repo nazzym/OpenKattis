@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "divvying up", "divvying up\divvying up.csproj", "{A420749B-4F04-4AFD-B2F3-D44CBF4EF686}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A420749B-4F04-4AFD-B2F3-D44CBF4EF686}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A420749B-4F04-4AFD-B2F3-D44CBF4EF686}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A420749B-4F04-4AFD-B2F3-D44CBF4EF686}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A420749B-4F04-4AFD-B2F3-D44CBF4EF686}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7636412A-F3D9-4EDE-B15B-4D5A2B37ACE2}
+	EndGlobalSection
+EndGlobal
