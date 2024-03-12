@@ -4,20 +4,24 @@
     {
         static void Main()
         {
-            int datasets = int.Parse(Console.ReadLine()); // Total datasets
+            int holidays = int.Parse(Console.ReadLine()); // Total datasets
+  string[] days = new string[holidays]; 
+  for (int i = 0; i < holidays; i++) 
+  {
+      Console.WriteLine("please enter the amount of days of this holiday");
+      days[i] = Console.ReadLine();
 
-            for (int dataset = 0; dataset < datasets; dataset++)
-            {
-                string input = Console.ReadLine();
-                string[] parts = input.Split(' ');
-                int holidayNumber = int.Parse(parts[0]);
-                int days = int.Parse(parts[1]);
+      int count = 1;
+     for ( int j = 1;  j > count; j++ )
+      {
 
-                int totalCandles = days * (days + 1) / 2 + days; // Total candles needed
-
-                string output = $"{holidayNumber.ToString().PadLeft(5)} {totalCandles.ToString().PadLeft(5)}";
-                Console.WriteLine(output);
-            }
+      Console.WriteLine(count);
+      }
+      
+      
+    
+      
+  }
         }
     }
 }
