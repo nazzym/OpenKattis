@@ -1,15 +1,34 @@
-﻿namespace simonsays
+﻿using System;
+using System.Collections.Generic; // Needed for using the List
+
+namespace simonsays
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            string input = Console.ReadLine(); // user input in string
-            int index = input.IndexOf('s');//finding the first encounter with the letter a
+            int number = int.Parse(Console.ReadLine()); // Number of commands to read
+            int i = 0;
+            List<string> commands = new List<string>(); // List to store commands that follow "Simon says"
 
-            if (index != -1)//checking if the letter a was found in the input string 
+            while (i < number)
             {
-                Console.WriteLine(input.Substring(index));// if it was then extract and print the substring of the input starting from the index of the first occurrence of a
+                string input = Console.ReadLine(); // User input in string
+                string Simon = "Simon says";
+
+                if (input.StartsWith(Simon))
+                {
+                    // Add everything after "Simon says" to the list
+                    string command = input.Substring(Simon.Length).Trim(); // .Trim() to remove any leading or trailing spaces
+                    commands.Add(command);
+                }
+                i++;
+            }
+
+            // Print all commands after exiting the loop
+            foreach (string command in commands)
+            {
+                Console.WriteLine(command);
             }
         }
     }
