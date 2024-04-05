@@ -14,7 +14,7 @@ namespace simonsays
             while (i < number)
             {
                 string input = Console.ReadLine(); // User input in string
-                string Simon = "Simon says";
+                string Simon = "Simon says ";
 
                 if (input.StartsWith(Simon))
                 {
