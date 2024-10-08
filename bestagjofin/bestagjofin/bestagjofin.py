@@ -19,9 +19,9 @@ def main():
     # Print the top entry
     if data:
         top_entry = data[0]
-        print(f"{top_entry[0]}")
+        print(top_entry[0])
     else:
-        print("No entries found.")
+        print()
 
 # Entry point for the script
 if __name__ == "__main__":
